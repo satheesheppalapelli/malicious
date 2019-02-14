@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Malicious Search</title>
+</head>
+<body>
+
+<div>
+        <h2>Ip Address Search</h2>
+        <form action="ipaddress.html" method="get">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit"  value="search">
+        </form>
+</div>
+</body>
+</html>
